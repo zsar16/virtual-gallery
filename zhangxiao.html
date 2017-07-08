@@ -3,13 +3,244 @@
 <head>
 	<title>Zhang Xiao</title>
 </head>
+	<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/cyborg/bootstrap.min.css">
+	<script src="js\bootstrap.min.js"></script>
+
+			<div class="row">
+			<div class="col-md-10">
+			<div class="jumbotron">
+			<div style="text-align: center">
+			<h2>Virtual Gallery</h2>
+			</div>
+			</div>
+			</div>
+			<div class="col-md-2">
+			<img src="Z:\virtual-gallery\img\logo.jpg" height="150" width="150">
+			</div>
+			</div>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="Z:\virtual-gallery\dominicmeily.html">Dominic Meily</a></li>
+            <li><a href="Z:\virtual-gallery\xyzacruzbacani.html">Xyza Cruz Bacani</a></li>
+            <li><a href="Z:\virtual-gallery\zhangxiao.html">Zhang Xiao</a></li>
+            <li><a href="Z:\virtual-gallery\stevemccurry.html">Steve McCurry</a></li>
+            <li><a href="Z:\virtual-gallery\leejeffries.html">Lee Jeffries</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <body>
+<h2>Zhang Xiao</h2>
 <p>Gordon Roger Alexander Buchanan Parks (November 30, 1912 – March 7, 2006) was an American photographer, musician, writer and film director, who became prominent in U.S. documentary photojournalism in the 1940s through 1970s—particularly in issues of civil rights, poverty and African-Americans—and in glamour photography.</p>
 
 <p>As the first famous pioneer among black filmmakers, he was the first African American to produce and direct major motion pictures—developing films relating the experience of slaves and struggling black Americans, and creating the "blaxploitation" genre. He is best remembered for his iconic photos of poor Americans during the 1940s (taken for a federal government project), for his photographic essays for Life magazine, and as the director of the 1971 film Shaft. Parks also was an author, poet and composer.</p>
-<p>
-GP1: American Gothic, Washington, D.C. – a well-known photograph by Parks
-GP2: A later photograph in the FSA series by Parks shows Ella Watson and her family</p>
 
+<h2>Life and Career</h2>
+<p>Zhang graduated in architecture from Yantai University in 2005. From 2006 to 2009, he worked in Chongqing as a photographer for the Chongqing Morning Post (《重庆晨报》). From the start, he carried two cameras: one for work, and a cheap medium format camera for personal use.</p>
+
+<p>Zhang has been inspired by the photography of Diane Arbus, Alec Soth and Boris Mikhailov.</p>
+
+<h3>They</h3>
+<p>
+They is a series of photographs mostly taken while Zhang was working in Chongqing; they are of scenes in Chongqing itself but also nearby on the Yangtze and Jialing rivers and elsewhere. The colour photographs are square format, and employed a Holga camera. A book of the photographs was published in China in 2012; two years later a smaller selection was published in Paris.</p>
+
+<h3>Coastline</h3>
+<p>For Coastline, Zhang "visited every town and city along the Chinese coastline", from 2009 to 2013. The photographs are colour again, but this time Zhang used a Mamiya 7 II camera. Zhang has described the coastline as "[China's] first area of impact from external culture and the rapid economic development; the series "records subtle and surreal moments of life by the sea".</p>
+
+<p>Cited by Agnès Sire as showing an intimate and contemporary China without any exoticism, Coastline won Prix HSBC pour la photographie (fr) 2011, and as a result was widely exhibited and published in book form in Arles by Actes Sud in 2011. Three years later a different selection was published in Kowloon by Jiazazhi Press, and a smaller selection in Tokyo by Zen Foto Gallery.</p>
+
+<h3>Envelopes</h3>
+<p>In China photojournalists are offered cash for their positive comment on a topic they are covering. Although in his career as a photojournalist Zhang declined such offers of envelopes containing large sums of money where he considered it unconscionable to do so, he accepted those with smaller sums where he considered the topic insignificant. He collected the envelopes, which he has exhibited.</p>
+
+<h3>Shanxi</h3>
+<p>Zhang used a Holga again for the square, colour photographs of traditional rituals surrounding the lunar new year in Shaanxi. The book Shanxi was first published by Little Big Man in the United States; Sean O'Hagan describes it as "a seductive book, a glimpse of a world of pagan custom that somehow endures against the odds, dreamlike and entrancing".</p>
+
+<h2>Exhibitions</h2>
+<ul>
+	<li>GP1: American Gothic, Washington, D.C. – a well-known photograph by Parks</li>
+	<li>GP2: A later photograph in the FSA series by Parks shows Ella Watson and her family</li>
+</ul>
+
+<h2>Photos of Zhang Xiao</h2>
+<style type="text/css">
+	#rig {
+    max-width:900px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#000;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+</style>
+<ul id="rig" style="padding-bottom: 200px;">
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\ZhangXiao\ZX1.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\ZhangXiao\ZX1.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Zhang Xiao</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\ZhangXiao\ZX2.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\ZhangXiao\ZX2.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Zhang Xiao</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\ZhangXiao\ZX3.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\ZhangXiao\ZX3.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Zhang Xiao</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\ZhangXiao\ZX4.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\ZhangXiao\ZX4.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Zhang Xiao</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\ZhangXiao\ZX5.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\ZhangXiao\ZX5.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Zhang Xiao</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\ZhangXiao\ZX6.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\ZhangXiao\ZX6.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Zhang Xiao</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\ZhangXiao\ZX7.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\ZhangXiao\ZX7.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Zhang Xiao</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\ZhangXiao\ZX8.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\ZhangXiao\ZX8.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Zhang Xiao</span>
+        </a>
+    </li>
+</ul>
 </body>
 </html>

@@ -59,8 +59,8 @@
 			  <img class="mySlides" src="Z:\virtual-gallery\img\DominicMeily\dam5.1.jpg" >
 			  <img class="mySlides" src="Z:\virtual-gallery\img\SteveMcCurry\sm9.1.jpg" >
 			  <img class="mySlides" src="Z:\virtual-gallery\img\XyzaCruzBacani\xcb5.1.jpg" >
-        <img class="mySlides" src="Z:\virtual-gallery\img\ZhangXiao\ZX1.1.jpg"> 
-			 </center>
+			  <img class="mySlides" src="Z:\virtual-gallery\img\ZhangXiao\ZX1.1.jpg"> 
+			</center>
       </div>
 	</div>
 
@@ -81,48 +81,6 @@ function carousel() {
 </script>
 
 <style type="text/css">
-.gallery {
-  width: 1000;
-  margin: 0 auto;
-  padding: 5px;
-  box-shadow: 0 1px 2px rgba(0,0,0,.3);
-}
-
-.gallery > div {
-  position: relative;
-  float: left;
-  padding: 5px;
-}
-
-.gallery > div > img {
-  display: block;
-  width: auto;
-  height: 200px;
-  max-width: 250px;
-
-  transition: .1s transform;
-  transform: translateZ(0); /* hack */
-}
-
-.gallery > div:hover {
-  z-index: 1;
-}
-
-.gallery > div:hover > img {
-  transform: scale(1.7,1.7);
-  transition: .3s transform;
-}
-
-.cf:before, .cf:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-
-.cf:after {
-  clear: both;
-}
-
 .mySlides {
  display:none;
  margin: 50px;
@@ -134,29 +92,136 @@ function carousel() {
 
 }
 
-h1 {
-  margin: 40px 0;
-  font-size: 30px;
-  font-weight: 300;
-  text-align: center;
+#rig {
+    max-width:900px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#000;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
 }
 </style>
-<h1 class="jumbotron">Photographers</h1>
-<div class="gallery cf">
-
-  <div>
-    <img src="/Users/zsarinadejesus/Desktop/VirtualGallery/virtual-gallery/img/DominicMeily/dam.1.jpg" alt="dominicmeily.html" />
-  </div>
-  <div>
-  <img src="/Users/zsarinadejesus/Desktop/VirtualGallery/virtual-gallery/img/XyzaCruzBacani/Xyza_Cruz_Bacani.jpg" alt="/Users/zsarinadejesus/Desktop/VirtualGallery/virtual-gallery/xyzacruzbacani.html" />
-  </div>
-  <div>
-    <img src="/Users/zsarinadejesus/Desktop/VirtualGallery/virtual-gallery/img/ZhangXiao/Xiao_Zhang_photographer.jpg" alt="zhangxiao.html" />
-  </div>
-  <div>
-    <img src="/Users/zsarinadejesus/Desktop/VirtualGallery/virtual-gallery/img/SteveMcCurry/sm1.1.jpg" alt="stevemccurry.html" />
-  </div> 
-</div>
+<center>
+<h1 class="jumbotron">Featured Photographers</h1>
+</center>
+<ul id="rig">
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\dominicmeily.html">
+            <img class="rig-img" src="Z:\virtual-gallery\img\DominicMeily\dam.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Dominic Meily</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\xyzacruzbacani.html">
+            <img class="rig-img" src="Z:\virtual-gallery\img\XyzaCruzBacani\Xyza_Cruz_Bacani.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Xyza Cruz Bacani</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\zhangxiao.html">
+            <img class="rig-img" src="Z:\virtual-gallery\img\ZhangXiao\Xiao_Zhang_photographer.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Zhang Xiao</span>
+        </a>
+    </li>
+</ul>
 
 </body>
 </html>

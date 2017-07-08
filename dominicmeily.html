@@ -3,6 +3,47 @@
 <head>
 	<title>Dominic Meily</title>
 </head>
+	<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/cyborg/bootstrap.min.css">
+	<script src="js\bootstrap.min.js"></script>
+
+			<div class="row">
+			<div class="col-md-10">
+			<div class="jumbotron">
+			<div style="text-align: center">
+			<h2>Virtual Gallery</h2>
+			</div>
+			</div>
+			</div>
+			<div class="col-md-2">
+			<img src="Z:\virtual-gallery\img\logo.jpg" height="150" width="150">
+			</div>
+			</div>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="Z:\virtual-gallery\dominicmeily.html">Dominic Meily</a></li>
+            <li><a href="Z:\virtual-gallery\xyzacruzbacani.html">Xyza Cruz Bacani</a></li>
+            <li><a href="Z:\virtual-gallery\zhangxiao.html">Zhang Xiao</a></li>
+            <li><a href="Z:\virtual-gallery\stevemccurry.html">Steve McCurry</a></li>
+            <li><a href="Z:\virtual-gallery\leejeffries.html">Lee Jeffries</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <body>
 
 <h2>Dominic Meily</h2>
@@ -24,10 +65,169 @@ Meily hosts seminars and workshops for both professional and amateur photographe
 
 Meily was also voted President of Photoville International, a group of professional and amateur photographers who share their knowledge and experiences in the art of photography.</p>
 
-<img src="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
-<img src="Z:\virtual-gallery\img\DominicMeily\dam4.1.jpg">
-<img src="Z:\virtual-gallery\img\DominicMeily\dam5.1.jpg">
-<img src="Z:\virtual-gallery\img\DominicMeily\dam6.1.jpg">
+<h2>Photos of Dominic Meily</h2>
+<style type="text/css">
+	#rig {
+    max-width:900px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#000;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
 
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+</style>
+<ul id="rig" style="padding-bottom: 200px;">
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Steve MacCurry</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Steve MacCurry</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Steve MacCurry</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Steve MacCurry</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Steve MacCurry</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Steve MacCurry</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Steve MacCurry</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <img class="rig-img" src="Z:\virtual-gallery\img\DominicMeily\dam3.1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Steve MacCurry</span>
+        </a>
+    </li>
+</ul>
 </body>
 </html>
